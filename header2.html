@@ -1,0 +1,89 @@
+<div class="header2">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header2-container {
+      background-color: rgb(105, 73, 25);
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .header2-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .header2-logo img {
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    .header2-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    .header2-menu a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .header2-menu a:hover {
+      color: #ffcd47;
+    }
+
+    @media (max-width: 768px) {
+      .header2-container {
+        flex-wrap: wrap;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .header2-logo {
+        width: 100%;
+        order: 1;
+        margin-bottom: 10px;
+      }
+
+      .header2-menu {
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header2-menu a {
+        margin: 5px 0;
+      }
+    }
+  </style>
+
+  <header class="header2-container">
+    <a href="#" class="header2-logo">
+      <img class="header2-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4QarHFR-ztiFkrO-eO7N7FP9cdH3XTEOBdg&usqp=CAU" alt="Logo">
+      Your Title
+    </a>
+    <nav class="header2-menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+</div>
